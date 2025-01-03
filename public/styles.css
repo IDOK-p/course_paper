@@ -1,0 +1,164 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #06276f;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #06276f;
+    text-align: center;
+}
+
+/* Формы */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+select {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #06276f;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #06276f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #06276f;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #06276f;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+/* Стиль для ячейки с результатом */
+td:last-child {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    select {
+        width: 60%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Стили для кнопок под таблицей */
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sort-buttons button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #06276f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sort-buttons button:hover {
+    background-color: #06276f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.sort-buttons button:active {
+    background-color: #06276f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+}
+
+/* Для мобильной версии */
+@media (max-width: 768px) {
+    .sort-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sort-buttons button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
